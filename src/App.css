@@ -1,0 +1,428 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #b3b3b3;
+  color: #333;
+}
+
+.home-container {
+  margin: 0px;
+  min-height: 90vh;
+  display: flex;
+  justify-content: center;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 15px 30px;
+  color: white;
+  margin: 0;
+}
+
+.navbar .logo img {
+  width: 50px;
+  height: auto;
+}
+
+.navbar-links {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar-links li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navbar-links li a:hover {
+  color: #f39c12;
+}
+
+
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #3498db;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+.message {
+  text-align: center;
+  margin-top: 20px;
+  color: green;
+  font-weight: bold;
+}
+
+button {
+  margin-top: 10px;
+} 
+
+.history-container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  min-height: 92vh;
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.search-field {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-right: 20px;
+}
+
+.search-container input {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-top: 5px;
+  width: 200px;
+}
+
+.transactions-container {
+  display: flex;  
+  gap: 20px;      
+  justify-content: space-between;
+}
+
+.transaction-section {
+  width: 48%; 
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.transaction-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.transaction-card {
+  background-color: #f7f7f7;
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.transaction-card strong {
+  color: #555;
+}
+@media (max-width: 768px) {
+  .transactions-container {
+    flex-direction: column; /* Empilha as seções em telas menores */
+  }
+
+  .transaction-section {
+    width: 100%; /* Aumenta a largura para 100% em telas pequenas */
+  }
+} 
+
+.register1 {
+  background: linear-gradient(to right, rgb(78, 168, 78), rgb(144, 238, 144));
+}
+
+.register2 {
+  background: linear-gradient(to right, rgb(228, 77, 77), rgb(255, 128, 128));
+} 
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  min-height: 20vh;
+}
+
+.col-3 {
+  flex: 1;
+  min-width: 220px;
+  padding: 20px;
+  margin:10px;
+  margin-bottom: 30px;
+  background: #f4f4f4;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.col-9 {
+  flex: 3;
+  padding: 20px;
+  background: #f0f8ff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h4 {
+  margin-bottom: 10px;
+} 
+
+
+.filters {
+  margin-bottom: 20px;
+}
+
+.filters label {
+  margin-right: 20px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 0px;
+}
+
+.col-3 {
+  flex: 1;
+  max-height: 150px;
+}
+
+.col-9 {
+  flex: 3;
+}
+
+.data-box {
+  padding: 10px;
+  background-color: #f8f9fa;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h4 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.value-box {
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 10px;
+  background-color: #e9ecef;
+  border-radius: 8px;
+}
+
+.cash-register {
+  background: #ffffff;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  width: 100%;
+  max-width: 900px;
+}
+
+.cash-register-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 10px;
+}
+
+/* Seções */
+.cash-register-section {
+  background-color: #f0f4f8;
+  padding: 20px 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cash-register-section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Títulos */
+.section-title {
+  font-size: 1.3rem;
+  color: #333;
+  margin-bottom: 12px;
+  border-bottom: 2px solid #007bff;
+  padding-bottom: 4px;
+}
+
+/* Formulários */
+.form-group {
+  margin-bottom: 12px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  font-size: 0.9rem;
+  border: 0.9px solid #ccc;
+  border-radius: 5px;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.primary-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 13px;
+  font-size: 0.9rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.primary-button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+} 
+
+.total {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  background-color: #e7f7e7;
+  border: 1px solid #c8e6c9; 
+  padding: 10px;
+  border-radius: 8px;
+  width: auto;
+  max-width: 250px; 
+  text-align: center;
+  margin: 20px auto; 
+}
+
+.strong1 {
+  color: #388e3c; 
+} 
+.strong2 {
+  color: rgb(211, 79, 79)
+} 
+
+
+.botaoLogin {
+  background-color: #4CAF50; 
+  color: white;
+  border: none;
+  padding:0px 5px;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.botaoLogin:hover {
+  background-color: #45a049;
+}
+
+.botaoLogout {
+  background-color: #f44336; 
+  color: white;
+  border: none;
+  padding: 0px 5px;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.botaoLogout:hover {
+  background-color: #d32f2f;
+} 
+
+.login-form {
+  margin: auto;
+  width: 30%;
+  background: #f8f9fa;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.error {
+  color: red;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.logged-in h1 {
+  color: #28a745;
+  margin-bottom: 10px;
+}
+
+.logged-in p {
+  font-size: 16px;
+  color: #555;
+}
+input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+h1 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form div {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+label {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: block;
+}
+
