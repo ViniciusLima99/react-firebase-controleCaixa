@@ -1,9 +1,15 @@
 DEVE-SE CRIAR A CONEXÃO COM O FIREBASE NO firebase.js
 
 as tabelas a serem criadas são as seguintes:
+
 users - email, password 
+
 sales - date, price, product
+
 costs - amount, date, description, type 
+
+
+
 
 # Getting Started with Create React App
 
